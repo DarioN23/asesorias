@@ -1,0 +1,89 @@
+@import "colores";
+
+body {
+background-color:$ColorFondo; 
+display-align: center;
+text-align: center; 
+}
+
+h1 {color: #9B5252;
+    font-family: Impact;
+}
+
+h2 {
+  color: #9B5252;
+  font-family: Tahoma;
+}
+
+h3 {
+ text-align: center;
+  color: black;
+  font-family: Tahoma;
+}
+
+/* Block */
+.btn {
+  text-decoration: none;
+  background-color: white;
+  color: #888;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 5px;
+}
+
+/* Element */
+.btn__price {
+  background-color: white;
+  color: #fff;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: -10px; /* realign button text padding */
+  font-weight: 600;
+  background-color: #333;
+  opacity: .4;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Element */
+.btn__text {
+  padding: 0 20px;
+  border-radius: 0 10px 10px 0;
+}
+
+/* Modifier */
+.btn--big {
+  font-size: 35px;
+  padding: 15px;
+  font-weight: 500;
+}
+
+/* Modifier */
+.btn--blue {
+  border-color: #0074D9;
+  color: white;
+  background-color: #0074D9;
+}
+
+/* Modifier */
+.btn--grey {
+  border-color: #CFCCCC;
+  color: white;
+  background-color: #988B8B;
+}
+
+/* Modifier */
+.btn--green {
+  border-color: #3D9970;
+  color: white;
+  background-color: #3D9970;
+}
+
+footer{color:red;
+font-size: 10px;
+font-family: Tahoma;
+text-align: center;
+}

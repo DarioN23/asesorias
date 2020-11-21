@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LegalArt</title>
+
+<section>
+<a href="../index.html"><img src="../img/legalartpng.png" alt="logo" height="550px"></a>
+</section>
+
+<link rel="stylesheet" href="../css/style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<header> 
+
+<h1 class="Titulo">Asesorías en Riesgos del Trabajo</h1>
+
+</header>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">LegalArt</a>
+    </div>
+           <ul class="nav navbar-nav">
+            <li class="active"><a href="../index.html">Home</a></li>
+               <li>
+              <a href="../page/Asesoria.html">Asesoría</a> 
+            </li>
+            <li>
+              <a href="../page/Actualidad.html">Actualidad</a>
+            </li>
+            <li>
+              <a href="../page/Clientes.html">Clientes</a>
+            </li>
+            <li>
+              <a href="../page/Objetivos.html">Objetivos</a>
+            </li>
+            <li>
+              <a href="../page/Contacto.html">Contacto</a>
+            </li>
+      </ul>
+    </div>
+   </nav>
+
+<body>
+
+<div class="container mt-3">
+  <h2>Legislación Vigente<h2>
+  <p>Clickea para conocer las leyes vigentes sobre asuntos Laborales</p>  
+  
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm">Ley 20.744 - CONTRATO LABORAL</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/27971/texact.htm">RIESGOS DE TRABAJO</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="http://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/17612/norma.htm">SEGURIDAD LABORAL</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content border mb-3">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>Ley De Trabajo</h3>
+      <p>Principio de la norma más favorable al trabajador: La
+normativa laboral se caracteriza por ser un derecho
+protector respecto de los intereses de los trabajadores y
+las trabajadoras.</p>
+    </div>
+    <div id="Riesgos de Trabajo" class="container tab-pane fade"><br>
+      <h3>RIESGOS DE TRABAJO</h3>
+      <p>Los objetivos de la Ley de Riesgos del Trabajo son: Resarcir los daños causados por enfermedades profesionales o accidentes de trabajo, incluyendo la rehabilitación del trabajador perjudicado. Disminuir las enfermedades y accidentes de trabajo a través de la prevención.</p>
+    </div>
+    <div id="Seguridad Laboral" class="container tab-pane fade"><br>
+      <h3>SEGURIDAD LABORAL</h3>
+      <p>El término seguridad laboral define el conjunto de medidas y actividades desarrollables para minimizar o eliminar completamente los riesgos derivados del trabajo. Este conjunto de medidas permiten por tanto reducir la siniestralidad laboral</p>
+    </div>
+ 
+
+<script>
+$(document).ready(function(){
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+  });
+  $('.nav-tabs a').on('shown.bs.tab', function(event){
+    var x = $(event.target).text();         // active tab
+    var y = $(event.relatedTarget).text();  // previous tab
+    $(".act span").text(x);
+    $(".prev span").text(y);
+  });
+});
+</script>
+
+
+</body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+<footer> <p>LegalArt Asesorías de Riesgos del Trabajo - 2020 - info@legalart.com.ar</p>
+</footer></body>
+</html>
